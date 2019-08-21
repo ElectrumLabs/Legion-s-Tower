@@ -42,7 +42,10 @@ public:
 
 	virtual void PossessedBy(AController* NewController) override;
 
-
+	/**  Attempt to activate abilities of tags
+	UFUNCTION(BlueprintCallable, Category = "Abilities")
+	bool ActivateAbilitiesWithTags(FGameplayTagContainer AbilityTags, bool bAllowRemoteActivation = true);
+	**/
 };
 
 //It's very important that this enum is UENUM, because the code will look for UENUM by the given name and crash if the UENUM can't be found. BlueprintType is there so we can use these in blueprints, too. Just in case. Can be neat to define ability packages.

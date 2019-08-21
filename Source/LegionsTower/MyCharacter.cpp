@@ -50,3 +50,5 @@ void AMyCharacter::PossessedBy(AController * NewController) {
 
 	AbilitySystem->RefreshAbilityActorInfo();
 }
+
+//  new stuff
