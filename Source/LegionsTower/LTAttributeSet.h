@@ -34,43 +34,43 @@ class LEGIONSTOWER_API ULTAttributeSet : public UAttributeSet
 	GENERATED_BODY()
 public:
 	/*  Sets default values for attributes.  */
-	LTAttributeSet();
+	ULTAttributeSet();
 
 	/*  Handles current health.  */
 	UPROPERTY()
 	FGameplayAttributeData Health;
 	DECLARE_ATTRIBUTE_FUNCTION(Health)
-	ATTRIBUTE_ACCESSORS(LTAttributeSet, Health)
+	ATTRIBUTE_ACCESSORS(ULTAttributeSet, Health)
 
 	/*  Handles max health.  */
 	UPROPERTY()
 	FGameplayAttributeData MaxHealth;
 	DECLARE_ATTRIBUTE_FUNCTION(MaxHealth)
-	ATTRIBUTE_ACCESSORS(LTAttributeSet, MaxHealth)
+	ATTRIBUTE_ACCESSORS(ULTAttributeSet, MaxHealth)
 
 	/*  Handles HP Regen.  */
 	UPROPERTY()
 	FGameplayAttributeData HealthRegenPerSecond;
 	DECLARE_ATTRIBUTE_FUNCTION(HealthRegenPerSecond)
-	ATTRIBUTE_ACCESSORS(LTAttributeSet, HealthRegenPerSecond)
+	ATTRIBUTE_ACCESSORS(ULTAttributeSet, HealthRegenPerSecond)
 
 	/*  Handles current mana.  */
 	UPROPERTY()
 	FGameplayAttributeData Mana;
 	DECLARE_ATTRIBUTE_FUNCTION(Mana)
-	ATTRIBUTE_ACCESSORS(LTAttributeSet, Mana)
+	ATTRIBUTE_ACCESSORS(ULTAttributeSet, Mana)
 
 	/*  Handles max mana.  */
 	UPROPERTY()
 	FGameplayAttributeData MaxMana;
 	DECLARE_ATTRIBUTE_FUNCTION(MaxMana)
-	ATTRIBUTE_ACCESSORS(LTAttributeSet, MaxMana)
+	ATTRIBUTE_ACCESSORS(ULTAttributeSet, MaxMana)
 
 	/*  Handles Mana Regen.  */
 	UPROPERTY()
 	FGameplayAttributeData ManaRegenPerSecond;
 	DECLARE_ATTRIBUTE_FUNCTION(ManaRegenPerSecond)
-	ATTRIBUTE_ACCESSORS(LTAttributeSet, ManaRegenPerSecond)
+	ATTRIBUTE_ACCESSORS(ULTAttributeSet, ManaRegenPerSecond)
 
 	/*
 	Called just before modifying the value of an attribute.  AttributeSet can make additional modifcations here.  Return true to continue, or false to throw out the modification.
